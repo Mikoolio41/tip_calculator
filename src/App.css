@@ -15,14 +15,20 @@ body {
   display: flex;
   flex-direction: column;
   text-align: center;
+}
+
+h1 {
+  color: #43362a;
+  text-shadow: -5px 3px 8px rgba(67, 54, 42, 0.59);
+}
+
+form {
+  text-align: center;
   background-color: #eadfce;
   border: 5px inset rgba(118, 117, 101, 0.34);
   border-radius: 40px 0px 40px 0px;
   -webkit-box-shadow: -5px 3px 8px 9px rgba(78, 69, 53, 0.2);
   box-shadow: -5px 3px 8px 9px rgba(78, 69, 53, 0.2);
-}
-
-form {
   width: 400px;
   height: fit-content;
 }

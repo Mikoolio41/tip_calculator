@@ -18,6 +18,7 @@ export default function App() {
 
   return (
     <div className="App">
+      <h1>Tip Calulator</h1>
       <form onSubmit={submit}>
         <fieldset className="subtotal">
           <label>subtotal</label>
@@ -48,15 +49,16 @@ export default function App() {
           </select>
         </fieldset>
         <button type="submit">Calculate</button>
+
+        <p>
+          total:
+          <span>{result.total && result.total.toFixed(2)}</span>
+        </p>
+        <p>
+          total per diner:
+          <span>{result.totalPerDiner && result.totalPerDiner.toFixed(2)}</span>
+        </p>
       </form>
-      <p>
-        total:
-        <span>{result.total && result.total.toFixed(2)}</span>
-      </p>
-      <p>
-        total per diner:
-        <span>{result.totalPerDiner && result.totalPerDiner.toFixed(2)}</span>
-      </p>
     </div>
   );
 }
