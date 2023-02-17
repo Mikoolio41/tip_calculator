@@ -41,18 +41,21 @@ export default function App() {
             onChange={(e) => setTipPercetnage(e.target.value)}
           >
             <option value="0">0%</option>
-            <option value="0.05">5%</option>
             <option value="0.1">10%</option>
+            <option value="0.12">12%</option>
             <option value="0.15">15%</option>
             <option value="0.2">20%</option>
           </select>
         </fieldset>
         <button type="submit">Calculate</button>
       </form>
-      <p>total: {result.total && result.total.toFixed(2)}</p>
       <p>
-        total per diner:{" "}
-        {result.totalPerDiner && result.totalPerDiner.toFixed(2)}
+        total:
+        <span>{result.total && result.total.toFixed(2)}</span>
+      </p>
+      <p>
+        total per diner:
+        <span>{result.totalPerDiner && result.totalPerDiner.toFixed(2)}</span>
       </p>
     </div>
   );

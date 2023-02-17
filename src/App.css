@@ -43,3 +43,38 @@ input {
 input:focus {
   outline: none;
 }
+
+button {
+  border-radius: 5px;
+  width: 6em;
+  height: 2em;
+  border: none;
+  border-bottom: 1px solid grey;
+  border-right: 1px solid grey;
+}
+
+button:active {
+  border: none;
+  border-top: 1px solid grey;
+  border-left: 1px solid grey;
+}
+
+button:hover {
+  background-color: rgb(244, 201, 188);
+  color: rgb(0, 0, 0);
+}
+
+.selectList {
+  margin-left: 15px;
+  border-radius: 5px;
+  width: 75px;
+  background-color: transparent;
+  outline: none;
+  border: none;
+  border-bottom: rgba(118, 117, 101, 0.34) 1px solid;
+}
+
+span {
+  margin-left: 15px;
+  color: red;
+}
