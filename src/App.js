@@ -21,21 +21,21 @@ export default function App() {
       <h1>Tip Calulator</h1>
       <form onSubmit={submit}>
         <fieldset className="subtotal">
-          <label>subtotal</label>
+          <label>Bill</label>
           <input
             value={subtotal}
             onChange={(e) => setSubtotal(e.target.value)}
           />
         </fieldset>
         <fieldset className="diners">
-          <label>number of people sharing the bill</label>
+          <label>Number of people sharing the bill</label>
           <input
             value={numDiners}
             onChange={(e) => setNumDiners(e.target.value)}
           />
         </fieldset>
         <fieldset className="percentage">
-          <label>tip percentage</label>
+          <label>Tip percentage</label>
           <select
             className="selectList"
             value={tipPercentage}
@@ -51,11 +51,11 @@ export default function App() {
         <button type="submit">Calculate</button>
 
         <p>
-          total:
+          Total:
           <span>{result.total && result.total.toFixed(2)}</span>
         </p>
         <p>
-          total per diner:
+          Total per diner:
           <span>{result.totalPerDiner && result.totalPerDiner.toFixed(2)}</span>
         </p>
       </form>
